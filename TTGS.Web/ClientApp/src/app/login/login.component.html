@@ -1,0 +1,48 @@
+
+
+        <div class="row justify-content-center">
+            <div class="card">
+                <h4 class="text-center">TTGS </h4>
+                        <form [formGroup]="loginForm" (ngSubmit)="onLogin()" novalidate>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="exampleFormControlInput1" class="form-label">User ID *</label>
+                                    <input type="text" class="form-control" formControlName="userID" placeholder="user ID">
+                                </div>
+                                <p id="error" [hidden]="!loginFormError.userID.errors?.required|| submitted == false" class="padding">
+                                    UserID is required
+                                </p>
+                                <p id="error" [hidden]="!loginFormError.userID.errors?.pattern || submitted == false" class="padding-start">
+                                    Invalid Email!
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="exampleFormControlInput1" class="form-label">Password</label>
+                                    <input type="password" pattern="(?=.{8,})(?=.*?[^\w\s])(?=.*?[0-9])(?=.*?[A-Z]).*?[a-z].*" class="form-control" formControlName="password" placeholder="password">
+                                </div>
+                                <p id="error" [hidden]="!loginFormError.password.errors?.required|| submitted == false" class="padding-start">
+                                    Password is required
+                                </p>
+                                <p id="error" [hidden]="!loginFormError.password.errors?.pattern || submitted == false" class="padding-start">
+                                    Password must be at least 8 characters and must contain at least one upper case, one lower case, one number
+                                    and one special
+                                    character
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="checkbox"> <span> Remember me</span> 
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                     <a href="/forgot-password"> Forgot Password</a> 
+                                </div>
+                            </div>
+                        <div class="row justify-content-center">
+                            <button type="submit" class="btn btn-info">Login</button>
+                        </div>
+                    </form>
+                </div>
+
+<app-footer></app-footer>

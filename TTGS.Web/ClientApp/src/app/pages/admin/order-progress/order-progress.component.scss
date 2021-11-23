@@ -1,0 +1,37 @@
+.recieved-color{
+    background-color:#96c8db;;
+    height: 12px;
+}
+.delivered-color{
+    background-color:#0e4d92;
+    height: 12px;
+}
+.loaded-color{
+background-color: #0f52ba;
+height: 12px;
+}
+.order-color{
+    background-color: #13538a;
+    height: 12px;
+    }
+.card{
+    background: #f6f6f6;
+    border-right: none;
+    border-left: none;
+}
+.card:hover{
+    box-shadow: 8px 8px 5px grey;    
+    transform: scale(1.1);
+
+}
+.card.order{
+    margin-top: 2vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    h6{
+        // margin-left: 9vw;
+        float: right;
+    }
+}

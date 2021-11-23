@@ -1,0 +1,4 @@
+﻿
+dotnet ef migrations add UpdatedCompanyDoc --project TTGS.Infrastructure --startup-project TTGS.Web --context TTGS.Infrastructure.EF.TTGSContext
+
+dotnet ef migrations add UpdatedCompanyDoc --project TTGS.Infrastructure --startup-project TTGS.Web --context TTGS.Infrastructure.EF.Data.ApplicationDbContext

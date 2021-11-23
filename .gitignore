@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.suo
+/*/bin/Debug
+/*/obj
+*.user
+*.config
+*.v2
+.vs/*
+/HRSystem.Web/Properties/ServiceDependencies/ToyinTrailerHRSystem - Web Deploy/profile.arm.json

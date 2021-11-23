@@ -1,0 +1,1 @@
+export const rootUrl = "https://toyintrailerhrsystem.azurewebsites.net/api/v1";

@@ -1,0 +1,59 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .card-container .card:not(.highlight-card) {
+    cursor: pointer;
+  }
+  .card{
+      max-height: 90px;
+      max-width: 60vh;
+  }
+  .card:hover{
+    box-shadow: 8px 8px 5px grey;    
+    transform: scale(1.1);
+
+}
+  .card-container .card:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+  .card.card-stats.card-container{
+    height: 120px;
+  }
+  
+  .board-admin{
+      background-color: #0e4d92;
+      height: 90px;
+      width: 90px;
+  }
+  .board-client{
+    background-color: #96c8db;
+    height: 90px;
+    width: 90px;
+  }
+  .board-sub-contractor{
+    background-color: #0f52ba;
+    height: 90px;
+    width: 90px;
+  }
+  .board-fleet{
+    background-color: #003512;
+    height: 90px;
+    width: 90px;
+  }
+  .board-expenses{
+    background-color: #111e6c;
+    height: 90px;
+    width: 90px;
+  }
+  .board-employee{
+    background-color: #0e4d92;
+    height: 90px;
+    width: 90px;
+  }
+  .card-body{
+      margin-right: 80px;
+  }

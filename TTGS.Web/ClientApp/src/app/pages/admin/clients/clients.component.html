@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-color">
+    </div>
+    <div class="card-body">
+        <h4>CLIENTS</h4>
+        <div class="row" *ngFor="let client of clients">
+        <img [src]="client.img">   
+        <h5>{{client.name}}</h5>
+        </div>
+    </div>
+    
+</div>

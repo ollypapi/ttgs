@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-color">
+    </div>
+    <div class="card-body">
+        <h4>SUB-CONTRACTORS</h4>
+        <div class="row" *ngFor="let sb of subContractors">
+        <img [src]="sb.img">   
+        <h5>{{sb.name}}</h5>
+        </div>
+    </div>
+</div>
